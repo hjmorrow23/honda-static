@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Avenir Next Medium';
+  font-style: normal;
+  src: url('../fonts/avenir-next/AvenirNextLTPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Avenir Next Bold';
+  font-style: normal;
+  src: url('../fonts/avenir-next/AvenirNextLTPro-Bold.otf');
+}
+
+@mixin font($type:'medium'){
+  @if $type == 'medium' {
+    font-family: 'Avenir Next Medium', 'Helvetica', 'Arial', sans-serif;
+  }
+
+  @if $type == 'bold'  {
+    font-family: 'Avenir Next Bold', 'Helvetica', 'Arial', sans-serif;
+  }
+}

@@ -1,0 +1,130 @@
+.login {
+  @include font('medium');
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  &__left,
+  &__right {
+    display: inline-block;
+  }
+
+  &__left {
+    background-image: url("../images/login-photo.png");
+    width: 62%;
+    height: 100%;
+  }
+
+  &__right {
+    width: 38%;
+    height: 100%;
+    vertical-align: top;
+    position: relative;
+    top: 26%;
+
+    &__logo,
+    &__form {
+      text-align: center;
+    }
+
+    &__logo {
+      width: 130px;
+      height: 90px;
+      background-image: url("../images/honda-logo.svg");
+      margin: 0 auto 86px;
+    }
+
+    &__form {
+      text-align: center;
+
+      &__fieldset {
+        width: 303px;
+        margin: 0 auto;
+        position: relative;
+
+        &__label,
+        &__input {
+          display: block;
+          text-align: left;
+        }
+
+        &__label {
+          margin-bottom: 10px;
+          font-size: 10px;
+          text-transform: uppercase;
+          color: $text-secondary;
+          @include font('bold');
+        }
+
+        &__input {
+          margin-bottom: 32px;
+          border: none;
+          border-bottom: 2px solid $primary;
+          width: calc(100% - 20px);
+          padding-bottom: 10px;
+          padding-right: 20px;
+          font-size: 14px;
+          color: $primary;
+
+          &:active,
+          &:focus {
+            outline: none;
+          }
+        }
+
+        &__check {
+          display: none;
+          width: 17px;
+          height: 14px;
+          position: absolute;
+          top: 25px;
+          right: 0;
+          background-image: url("../images/check.svg");
+        }
+      }
+
+      &__links {
+        margin: 0 auto;
+        width: 303px;
+        text-align: left;
+
+        &__submit,
+        &__forgot-password {
+
+        }
+
+        &__submit {
+          @include font('bold');
+          background: $primary;
+          border-radius: 33px;
+          padding: 15px 45px;
+          border: none;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 18px;
+          margin-right: 25px;
+          cursor: pointer;
+          transition: color .35s, background .35s, border .35s, padding .35s;
+
+          &:active,
+          &:focus {
+            outline: none;
+          }
+
+          &:hover {
+            background: $white;
+            color: $primary;
+            border: 1px solid #007CC3;
+            padding: 14px 44px;
+          }
+        }
+
+        &__forgot-password {
+          font-size: 14px;
+          text-decoration: underline;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}

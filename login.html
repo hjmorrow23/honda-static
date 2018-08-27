@@ -1,22 +1,31 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <link href="assets/stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/stylesheets/refactor.css" />
   </head>
   <body>
-    <section class="">
-      <h1 class=""></h1>
-      <form class="">
-        <fieldset class="">
-          <label class=""></label>
-          <input type="text" class="" />
-        </fieldset>
-        <fieldset class="">
-          <label class=""></label>
-          <input type="text" class="" />
-        </fieldset>
-        <input type="submit" class="" />
-      </form>
+    <section class="login">
+      <div class="login__left">
+      </div><!--
+   --><div class="login__right">
+        <div class="login__right__logo"></div>
+        <form class="login__right__form">
+          <fieldset class="login__right__form__fieldset">
+            <label class="login__right__form__fieldset__label">Username</label>
+            <input type="text" class="login__right__form__fieldset__input" />
+            <span class="login__right__form__fieldset__check"></span>
+          </fieldset>
+          <fieldset class="login__right__form__fieldset">
+            <label class="login__right__form__fieldset__label">Password</label>
+            <input type="password" class="login__right__form__fieldset__input" />
+            <span class="login__right__form__fieldset__check"></span>
+          </fieldset>
+          <div class="login__right__form__links">
+            <input type="submit" class="login__right__form__links__submit" value="Sign In" />
+            <a href="" class="login__right__form__links__forgot-password">Forgot Password</a>
+          </div>
+        </form>
+      </div>
     </section>
     <script src="assets/js/index.js"></script>
   </body>
