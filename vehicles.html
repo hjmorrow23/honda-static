@@ -27,7 +27,7 @@
         		</div>
         	</li>
         	<li class="side_nav__list__item">
-        		<a href="/app/home" class="side_nav__list__item__link" title="Observation Deck">
+        		<a href="" class="side_nav__list__item__link" title="Observation Deck">
               <svg class="side_nav__list__item__link__icon" width="14px" height="22px" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g transform="translate(-262.000000, -115.000000)" id="Icon/pod/check">
@@ -46,10 +46,21 @@
               </svg>
               <span>Vehicle Selection</span>
             </a>
+            <ul class="side_nav__list__item__submenu">
+              <li class="side_nav__list__item__submenu__item">
+                <a href="" class="side_nav__list__item__submenu__item__link">Collision Info</a>
+              </li>
+              <li class="side_nav__list__item__submenu__item">
+                <a href="" class="side_nav__list__item__submenu__item__link">Owners Manual</a>
+              </li>
+              <li class="side_nav__list__item__submenu__item">
+                <a href="" class="side_nav__list__item__submenu__item__link">Parts</a>
+              </li>
+            </ul>
         	</li>
         	<li class="side_nav__list__item">
         		<a href="/app/locator/map" class="side_nav__list__item__link" title="Locator">
-              <svg class="side_nav__list__item__link__icon" width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg class="side_nav__list__item__link__icon gear" width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="Side-bar-observation" class="icon-svg-path" transform="translate(-20.000000, -138.000000)" fill="#06456A">
                           <g id="Page-1" transform="translate(20.591797, 138.506836)">
@@ -70,7 +81,7 @@
           	<h1 class="app_subheader__title">Diagnostics</h1>
           </div>
           <!-- Content -->
-            <div class="header header__sightings">
+            <div class="header header__panel">
             	<h1 class="header__main">
                 <svg class="header__main__icon" width="18px" height="27px" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -90,204 +101,148 @@
                 </svg>
             	Vehicle Selection</h1>
             </div>
-            <div class="sightings">
-            	    <div class="sightings__box sightings__box__inner-grid__one">
-            	        <div class="sightings__box__one sightings__box__one__inner-grid">
-            	        		<div class="sightings__box__one__a">
-            	        			<div class="sightings__box__one__a__status-circle--online"></div>
-            	        			<h1>Pod 8765A3</h1>
-            	        			<div class="sightings__box__one__a__status-indicator--online">Online</div>
-            	        		</div>
-            	        		<div class="sightings__box__one__b">
-            	        			<a href="#" class="sightings__box__one__b__disconnect">Disconnect</a>
-            	        		</div>
-            	        </div>
-            	        <div class="sightings__box__two sightings__box__two__inner-grid">
-            	        		<div class="sightings__box__two__a">
-            	        			<h1>Tracker 01</h1>
-            	        			<div class="sightings__box__two__a__tracking-number">09667</div>
-            	        			<p class="sightings__box__two__a__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__b">
-            	        			<h1>Tracker 02</h1>
-            	        			<div class="sightings__box__two__b__tracking-number">765fg4</div>
-            	        			<p class="sightings__box__two__b__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__c">
-            	        			<h1>Tracker 03</h1>
-            	        			<div class="sightings__box__two__c__tracking-number">ewadfasdg947</div>
-            	        			<p class="sightings__box__two__c__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__d">
-            	        			<h1>Runtime</h1>
-            	        			<div class="sightings__box__two__d__time">12</div>
-            	        			<div class="sightings__box__two__d__min">min</div>
-            		        			<ul class="time-chart green-triangle">
-            		  				</ul>
-            	        		</div>
-            	        </div>
-            	    </div>
-            	    <div class="sightings__box sightings__box__inner-grid__two">
-            	    <div class="sightings__box__three">
-            	    		<a href="#" class="sightings__box__three__locate">locate</a>
-            	    		<a href="#" class="sightings__box__three__pod-menu"><img src="../../assets/images/pod-menu.svg" class="sightings__box__three__pod-menu__dropdown"/></a>
-            	        </div>
-            	        <div class="sightings__box__four">
-            	        		<h1>Last Deployed</h1>
-            	        		<div class="sightings__box__four__date">Friday, February 15, 2017</div>
-            	        		<div class="sightings__box__four__time">03:09:0013 PM</div>
-            	        </div>
-            	    </div>
-                </div>
-                <div class="sightings">
-            	    <div class="sightings__box sightings__box__inner-grid__one">
-            	        <div class="sightings__box__one sightings__box__one__inner-grid">
-            	        		<div class="sightings__box__one__a">
-            	        			<div class="sightings__box__one__a__status-circle--online"></div>
-            	        			<h1>Pod 8765A3</h1>
-            	        			<div class="sightings__box__one__a__status-indicator--online">Online</div>
-            	        		</div>
-            	        		<div class="sightings__box__one__b">
-            	        			<a href="#" class="sightings__box__one__b__disconnect">Disconnect</a>
-            	        		</div>
-            	        </div>
-            	        <div class="sightings__box__two sightings__box__two__inner-grid">
-            	        		<div class="sightings__box__two__a">
-            	        			<h1>Tracker 01</h1>
-            	        			<div class="sightings__box__two__a__tracking-number">09667</div>
-            	        			<p class="sightings__box__two__a__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__b">
-            	        			<h1>Tracker 02</h1>
-            	        			<div class="sightings__box__two__b__tracking-number">765fg4</div>
-            	        			<p class="sightings__box__two__b__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__c">
-            	        			<h1>Tracker 03</h1>
-            	        			<div class="sightings__box__two__c__tracking-number">ewadfasdg947</div>
-            	        			<p class="sightings__box__two__c__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__d">
-            	        			<h1>Runtime</h1>
-            	        			<div class="sightings__box__two__d__time">50</div>
-            	        			<div class="sightings__box__two__d__min">min</div>
-            	        				<ul class="time-chart sightings__box__two__d__green-triangle">
-            		  				</ul>
-            	        		</div>
-            	        </div>
-            	    </div>
-            	    <div class="sightings__box sightings__box__inner-grid__two">
-            	    <div class="sightings__box__three">
-            	    			<a href="#" class="sightings__box__three__locate">locate</a>
-            	    			<a href="#" class="sightings__box__three__pod-menu"><img src="../../assets/images/pod-menu.svg" class="sightings__box__three__pod-menu__dropdown"/></a>
-            	        </div>
-            	        <div class="sightings__box__four">
-            	        		<h1>Last Deployed</h1>
-            	        			<div class="sightings__box__four__date">Friday, February 15, 2017</div>
-            	        			<div class="sightings__box__four__time">03:09:0013 PM</div>
-            	        </div>
-            	    </div>
-            	</div>
-            	<div class="sightings">
-            	    <div class="sightings__box sightings__box__inner-grid__one">
-            	        <div class="sightings__box__one sightings__box__one__inner-grid">
-            	        		<div class="sightings__box__one__a">
-            	        			<div class="sightings__box__one__a__status-circle--offline"></div>
-            	        			<h1>Pod 8765A3</h1>
-            	        			<div class="sightings__box__one__a__status-indicator--offline">Online</div>
-            	        		</div>
-            	        		<div class="sightings__box__one__b">
-            	        			<a href="#" class="sightings__box__one__b__connect">Connect</a>
-            	        		</div>
-            	        </div>
-            	        <div class="sightings__box__two sightings__box__two__inner-grid">
-            	        		<div class="sightings__box__two__a">
-            	        			<h1>Tracker 01</h1>
-            	        			<div class="sightings__box__two__a__tracking-number">09667</div>
-            	        			<p class="sightings__box__two__a__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__b">
-            	        			<h1>Tracker 02</h1>
-            	        			<div class="sightings__box__two__b__tracking-number">765fg4</div>
-            	        			<p class="sightings__box__two__b__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__c">
-            	        			<h1>Tracker 03</h1>
-            	        			<div class="sightings__box__two__c__tracking-number">ewadfasdg947</div>
-            	        			<p class="sightings__box__two__c__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__d">
-            	        			<h1>Runtime</h1>
-            	        			<div class="sightings__box__two__d__time">0</div>
-            	        			<div class="sightings__box__two__d__min">min</div>
-            	        		</div>
-            	        </div>
-            	    </div>
-            	    <div class="sightings__box sightings__box__inner-grid__two">
-            	    <div class="sightings__box__three">
-            	    			<a href="#" class="sightings__box__three__locate">locate</a>
-            	    			<a href="#" class="sightings__box__three__pod-menu"><img src="../../assets/images/pod-menu.svg" class="sightings__box__three__pod-menu__dropdown"/></a>
-            	        </div>
-            	        <div class="sightings__box__four">
-            	        		<h1>Last Deployed</h1>
-            	        			<div class="sightings__box__four__date">Friday, February 15, 2017</div>
-            	        			<div class="sightings__box__four__time">03:09:0013 PM</div>
-            	        </div>
-            	    </div>
-            	</div>
-            	<div class="sightings">
-            	    <div class="sightings__box sightings__box__inner-grid__one">
-            	        <div class="sightings__box__one sightings__box__one__inner-grid">
-            	        		<div class="sightings__box__one__a">
-            	        			<div class="sightings__box__one__a__status-circle--error"></div>
-            	        			<h1>Pod 8765A3</h1>
-            	        			<div class="sightings__box__one__a__status-indicator--error">Online</div>
-            	        		</div>
-            	        		<div class="sightings__box__one__b">
-            	        			<a href="#" class="sightings__box__one__b__disconnect">Disconnect</a>
-            	        		</div>
-            	        </div>
-            	        <div class="sightings__box__two sightings__box__two__inner-grid">
-            	        		<div class="sightings__box__two__a">
-            	        			<h1>Tracker 01</h1>
-            	        			<div class="sightings__box__two__a__tracking-number">09667</div>
-            	        			 <p class="sightings__box__two__a__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__b">
-            	        			<h1>Tracker 02</h1>
-            	        			<div class="sightings__box__two__b__tracking-number">765fg4</div>
-            	        			<p class="sightings__box__two__b__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__c">
-            	        			<h1>Tracker 03</h1>
-            	        			<div class="sightings__box__two__c__tracking-number">ewadfasdg947</div>
-            	        			<p class="sightings__box__two__c__information">Some information</p>
-            	        		</div>
-            	        		<div class="sightings__box__two__d">
-            	        			<h1>Runtime</h1>
-            	        			<div class="sightings__box__two__d__time">12</div>
-            	        			<div class="sightings__box__two__d__min-error">min</div>
-            	        				<ul class="time-chart">
-            		  				</ul>
-            	        		</div>
-            	        </div>
-            	    </div>
-            	    <div class="sightings__box sightings__box__inner-grid__two">
-            	    		<div class="sightings__box__three">
-            	    			<a href="#" class="sightings__box__three__locate">locate</a>
-            	    			<a href="#" class="sightings__box__three__pod-menu"><img src="../../assets/images/pod-menu.svg" class="sightings__box__three__pod-menu__dropdown"/></a>
-            	        </div>
-            	        <div class="sightings__box__four">
-            	        		<h1>Last Deployed</h1>
-            	        			<div class="sightings__box__four__date">Friday, February 15, 2017</div>
-            	        			<div class="sightings__box__four__time">03:09:0013 PM</div>
-            	        </div>
-            	    </div>
-            	</div>
+            <div class="panel">
+        	    <div class="panel__box panel__box__inner-grid__one">
+        	        <div class="panel__box__one panel__box__one__inner-grid">
+        	        		<div class="panel__box__one__a">
+        	        			<div class="panel__box__one__a__status-circle--online"></div>
+        	        			<h1>2018 Civic Sedan LX 6-Speed Manual</h1>
+        	        		</div>
+        	        </div>
+        	        <div class="panel__box__two panel__box__two__inner-grid">
+        	        		<div class="panel__box__two__box panel__box__two__a">
+        	        			<img src="./assets/images/download.png" />
+        	        		</div>
+        	        		<div class="panel__box__two__box panel__box__two__b">
+        	        			<div class="panel__box__two__b__category">VIN</div>
+                        <div class="panel__box__two__b__category">Device ID</div>
+                        <div class="panel__box__two__b__category">Device Serial Number</div>
+                        <div class="panel__box__two__b__category">Protocol</div>
+        	        		</div>
+        	        		<div class="panel__box__two__box panel__box__two__c">
+        	        			<p class="panel__box__two__c__information">3D7ML49L29351000O6</p>
+                        <p class="panel__box__two__c__information">ED-F8-47-41-1E-B2</p>
+                        <p class="panel__box__two__c__information">ASP-12345</p>
+                        <p class="panel__box__two__c__information">ISO 15765 CAN</p>
+        	        		</div>
+        	        		<div class="panel__box__two__box panel__box__two__d">
+        	        			<div class="panel__box__two__d__time">3</div>
+        	        			<div class="panel__box__two__d__min">DTCs</div>
+        	        		</div>
+                      <div class="panel__box__two__box panel__box__two__d">
+        	        			<div class="panel__box__two__d__time">0</div>
+        	        			<div class="panel__box__two__d__min">Flashes</div>
+        	        		</div>
+        	        </div>
+        	    </div>
+        	    <div class="panel__box panel__box__inner-grid__two">
+          	    <div class="panel__box__three">
+                    <a href="#" class="panel__box__three__disconnect">Disconnect</a>
+          	    		<a href="#" class="panel__box__three__pod-menu"><img src="assets/images/ellipses.svg" class="panel__box__three__pod-menu__dropdown"/></a>
+          	    </div>
+      	        <div class="panel__box__four">
+      	        		<h1>Connection Time</h1>
+      	        		<div class="panel__box__four__date">Friday, August 24, 2018</div>
+      	        		<div class="panel__box__four__time">03:09:0013 PM</div>
+      	        </div>
+        	    </div>
+            </div>
+            <div class="panel">
+        	    <div class="panel__box panel__box__inner-grid__one">
+        	        <div class="panel__box__one panel__box__one__inner-grid">
+        	        		<div class="panel__box__one__a">
+        	        			<div class="panel__box__one__a__status-circle--online"></div>
+        	        			<h1>2018 Accord LX CVT</h1>
+        	        		</div>
+        	        </div>
+        	        <div class="panel__box__two panel__box__two__inner-grid">
+        	        		<div class="panel__box__two__box panel__box__two__a">
+        	        			<img src="./assets/images/01.png" />
+        	        		</div>
+        	        		<div class="panel__box__two__box panel__box__two__b">
+        	        			<div class="panel__box__two__b__category">VIN</div>
+                        <div class="panel__box__two__b__category">Device ID</div>
+                        <div class="panel__box__two__b__category">Device Serial Number</div>
+                        <div class="panel__box__two__b__category">Protocol</div>
+        	        		</div>
+        	        		<div class="panel__box__two__box panel__box__two__c">
+        	        			<p class="panel__box__two__c__information">3D7ML49L29351000O6</p>
+                        <p class="panel__box__two__c__information">ED-F8-47-41-1E-B2</p>
+                        <p class="panel__box__two__c__information">ASP-12345</p>
+                        <p class="panel__box__two__c__information">ISO 15765 CAN</p>
+        	        		</div>
+        	        		<div class="panel__box__two__box panel__box__two__d">
+        	        			<div class="panel__box__two__d__time">3</div>
+        	        			<div class="panel__box__two__d__min">DTCs</div>
+        	        		</div>
+                      <div class="panel__box__two__box panel__box__two__d">
+        	        			<div class="panel__box__two__d__time">0</div>
+        	        			<div class="panel__box__two__d__min">Flashes</div>
+        	        		</div>
+        	        </div>
+        	    </div>
+        	    <div class="panel__box panel__box__inner-grid__two">
+          	    <div class="panel__box__three">
+                    <a href="#" class="panel__box__three__disconnect">Disconnect</a>
+          	    		<a href="#" class="panel__box__three__pod-menu"><img src="assets/images/ellipses.svg" class="panel__box__three__pod-menu__dropdown"/></a>
+          	    </div>
+      	        <div class="panel__box__four">
+      	        		<h1>Connection Time</h1>
+      	        		<div class="panel__box__four__date">Friday, August 24, 2018</div>
+      	        		<div class="panel__box__four__time">03:09:0013 PM</div>
+      	        </div>
+        	    </div>
+            </div>
+            <div class="panel">
+        	    <div class="panel__box panel__box__inner-grid__one">
+        	        <div class="panel__box__one panel__box__one__inner-grid">
+        	        		<div class="panel__box__one__a">
+        	        			<div class="panel__box__one__a__status-circle--online"></div>
+        	        			<h1>2019 HR-V LX CVT</h1>
+        	        		</div>
+        	        </div>
+        	        <div class="panel__box__two panel__box__two__inner-grid">
+        	        		<div class="panel__box__two__box panel__box__two__a">
+        	        			<img src="./assets/images/02.png" />
+        	        		</div>
+        	        		<div class="panel__box__two__box panel__box__two__b">
+        	        			<div class="panel__box__two__b__category">VIN</div>
+                        <div class="panel__box__two__b__category">Device ID</div>
+                        <div class="panel__box__two__b__category">Device Serial Number</div>
+                        <div class="panel__box__two__b__category">Protocol</div>
+        	        		</div>
+        	        		<div class="panel__box__two__box panel__box__two__c">
+        	        			<p class="panel__box__two__c__information">3D7ML49L29351000O6</p>
+                        <p class="panel__box__two__c__information">ED-F8-47-41-1E-B2</p>
+                        <p class="panel__box__two__c__information">ASP-12345</p>
+                        <p class="panel__box__two__c__information">ISO 15765 CAN</p>
+        	        		</div>
+        	        		<div class="panel__box__two__box panel__box__two__d">
+        	        			<div class="panel__box__two__d__time">3</div>
+        	        			<div class="panel__box__two__d__min">DTCs</div>
+        	        		</div>
+                      <div class="panel__box__two__box panel__box__two__d">
+        	        			<div class="panel__box__two__d__time">0</div>
+        	        			<div class="panel__box__two__d__min">Flashes</div>
+        	        		</div>
+        	        </div>
+        	    </div>
+        	    <div class="panel__box panel__box__inner-grid__two">
+          	    <div class="panel__box__three">
+                    <a href="#" class="panel__box__three__disconnect">Disconnect</a>
+          	    		<a href="#" class="panel__box__three__pod-menu"><img src="assets/images/ellipses.svg" class="panel__box__three__pod-menu__dropdown"/></a>
+          	    </div>
+      	        <div class="panel__box__four">
+      	        		<h1>Connection Time</h1>
+      	        		<div class="panel__box__four__date">Friday, August 24, 2018</div>
+      	        		<div class="panel__box__four__time">03:09:0013 PM</div>
+      	        </div>
+        	    </div>
+            </div>
         </div>
       </section>
     </section>
-
-    <script src="assets/js/index.js"></script>
+    <script type="text/javascript" src="./assets/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
   </body>
 </html>

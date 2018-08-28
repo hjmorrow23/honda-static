@@ -84,6 +84,31 @@
 
 			}
 
+      &__submenu {
+        display: none;
+        background-color: $white;
+        box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+
+        &__item {
+
+
+          &__link {
+            display: block;
+            padding-left: 40px;
+            background-color: transparent;
+            color: $secondary;
+            transition: background-color .35s, color .35s;
+
+            &:hover {
+              background-color: $primary;
+              color: $white;
+            }
+          }
+
+        }
+
+      }
+
 			&__subheading {
 				@extend .side_nav__list__item__link;
 				@include font(black);
@@ -148,7 +173,7 @@
 					float: none;
 // 					top: 5px;
 					top: 39%;
-					right: 20px;
+					right: 15px;
 					position: absolute;
 					transition: top .01s;
 				}
@@ -207,4 +232,8 @@
   background-repeat: no-repeat;
   width: 18px;
   height: 13px;
+}
+
+.gear {
+  right: 2px;
 }

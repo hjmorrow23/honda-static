@@ -21,10 +21,10 @@ body {
     height: 100%;
     min-height: calc(100vh - 20px);
     overflow-x: hidden;
-    transition: width .35s;
+    // transition: width .35s;
     position: relative;
     z-index: 1;
-    transition: margin-left .35s, border-left-width .35s;
+    transition: margin-left .35s, border-left-width .35s, width .35s;
     border-left-style: solid;
     border-left-color: $background-secondary;
 }
@@ -45,6 +45,7 @@ body {
 .js-sidebar-border--closed {
 	margin-left: -50px;
     border-left-width: 50px;
+		// width: calc(100% - 50px) !important;
 }
 
 .content {
@@ -323,7 +324,7 @@ body {
 	background: $error;
 }
 
-.sightings {
+.panel {
 // 	display: grid;
 //     grid-row-gap: 16px;
 //     grid-column-gap: 2px;
@@ -366,25 +367,26 @@ body {
 			color: $text;
 
 			&__inner-grid {
-				display: grid;
-				grid-template-columns: repeat(2, 1fr);
+				// display: grid;
+				// grid-template-columns: repeat(2, 1fr);
 				border-bottom: 1px solid $borderBottom;
     				margin: 0 53px 0 20px;
     				height: 65px;
-    				display: -ms-grid;
-    				-ms-grid-columns: 1fr 1fr;
+    				// display: -ms-grid;
+    				// -ms-grid-columns: 1fr 1fr;
 			}
 
 			&__a {
 				position: relative;
-    				display: flex;
-    				align-items: center;
-    				-ms-grid-column: 1;
-    				-ms-grid-row: 1;
-
-    				@media all and (-ms-high-contrast:none){
-	     			top: 20px;
-	  			 }
+				padding: 23px 0;
+    				// display: flex;
+    				// align-items: center;
+    				// -ms-grid-column: 1;
+    				// -ms-grid-row: 1;
+					 //
+    				// @media all and (-ms-high-contrast:none){
+	     			// top: 20px;
+	  			 // }
 
 				h1 {
 					@include font('bold');
@@ -397,11 +399,13 @@ body {
 				&__status-circle {
 
 					&--online, &--offline, &--error {
-					height: 15px;
-					width: 15px;
-					border-radius: 100%;
-					display: inline-block;
-					margin-right: 14px;
+						height: 15px;
+						width: 15px;
+						border-radius: 100%;
+						display: inline-block;
+						margin-right: 14px;
+						position: relative;
+				    top: 3px;
 					}
 
 					&--online {
@@ -527,33 +531,50 @@ body {
 		}
 
 		&__two {
-			color: $primaryFontColor;
+			color: $text;
+
+			&__box {
+				display: inline-block;
+				width: 19%;
+				// height: 100%;
+				vertical-align: top;
+				margin-top: 30px;
+			}
 
 			&__inner-grid {
-				display: grid;
-				grid-template-columns: repeat(6, 1fr);
+				// display: grid;
+				// grid-template-columns: repeat(6, 1fr);
 				position: relative;
-				top: 30px;
+				// top: 30px;
 				margin: 0 53px 0 20px;
-				display: -ms-grid;
-				-ms-grid-columns: 1fr 1fr 1fr 50%;
+				height: 125px;
+				// display: -ms-grid;
+				// -ms-grid-columns: 1fr 1fr 1fr 50%;
 			}
 
 			&__a {
-				-ms-grid-column: 1;
-				-ms-grid-row: 1;
+				// -ms-grid-column: 1;
+				// -ms-grid-row: 1;
+				margin: 10px 10px 0 0;
+
+				img{
+					width: 100%;
+				}
 			}
 			&__b {
-				-ms-grid-column: 2;
-				-ms-grid-row: 1;
+				// -ms-grid-column: 2;
+				// -ms-grid-row: 1;
 			}
 			&__c {
-				-ms-grid-column: 3;
-				-ms-grid-row: 1;
+				// -ms-grid-column: 3;
+				// -ms-grid-row: 1;
+				margin-right: 50px;
 			}
 			&__d {
-				-ms-grid-column: 4;
-				-ms-grid-row: 1;
+				// -ms-grid-column: 4;
+				// -ms-grid-row: 1;
+				width: 10%;
+				text-align: center;
 			}
 
 				&__a, &__b, &__c, &__d {
@@ -567,6 +588,11 @@ body {
 					letter-spacing: 2px;
 					}
 
+					&__category {
+						@include font('bold');
+						padding-bottom: 7px;
+					}
+
 					&__tracking-number {
 						position: relative;
     						top: 10px;
@@ -574,13 +600,13 @@ body {
 
 					&__information {
 						position: relative;
-    						top: 15px;
+						padding-bottom: 7px;
 					}
 				}
 				&__d {
-					grid-column: span 3/7;
+					// grid-column: span 3/7;
 					position: relative;
-					left: 80px;
+					// left: 80px;
 
 // 						ul.green-triangle {
 //
@@ -599,17 +625,17 @@ body {
 						h1 {
 						}
 						&__time {
-							display: inline-block;
+							@include font('bold');
+							color: $primary;
+							display: block;
 							position: relative;
 							top: 5px;
 							font-size: 40px;
-							font-family: "Anonymous Pro", "Lato", "Roboto", "Helvetica", "Arial", sans-serif;
 						}
 						&__min {
-							display: inline-block;
+							display: block;
 							position: relative;
-							top: 5px;
-							left: 5px;
+							top: 8px;
 
 
 							&--online {
@@ -628,6 +654,76 @@ body {
 			position: relative;
     			top: 25px;
    			padding: 0 20px;
+
+				&__disconnect {
+					color: $headerFontColor;
+					font-size: 11px;
+					text-transform: uppercase;
+					vertical-align: top;
+					@include font('bold');
+
+					&::before {
+						content: "";
+						background-image: url('../images/power-icon.svg');
+						position: relative;
+						height: 25px;
+						width: 25px;
+						background-repeat: no-repeat;
+						bottom: 4px;
+						display: inline-block;
+						// right: 56px;
+					}
+
+
+					&:hover {
+					color: $headerFontColor;
+					text-decoration: none;
+					}
+					&:focus {
+					text-decoration: none;
+					}
+
+					&:active {
+					color: $headerFontColor;
+					text-decoration: none;
+					}
+					&:visited {
+					color: $headerFontColor;
+					text-decoration: none;
+					}
+				}
+				&__connect {
+					color: $connected;
+					right: 18px;
+
+					&::before {
+						content: "";
+						background-image: url(/assets/images/power-connect.svg);
+						position: absolute;
+							height: 50px;
+								width: 50px;
+								background-repeat: no-repeat;
+								top: 0px;
+								right: 37px;
+					}
+
+					&:hover {
+					color: $connected;
+					text-decoration: none;
+					}
+					&:focus {
+					text-decoration: none;
+					}
+
+					&:active {
+					color: $connected;
+					text-decoration: none;
+					}
+					&:visited {
+					color: $connected;
+					text-decoration: none;
+					}
+				}
 
 			&__locate {
 				text-transform: uppercase;
@@ -653,7 +749,9 @@ body {
 			}
 			&__pod-menu {
 				float: right;
-    				cursor: pointer;
+    		cursor: pointer;
+				position: relative;
+				bottom: 7px;
 
 				&__dropdown {
 				}
@@ -661,13 +759,14 @@ body {
 		}
 
 		&__four {
-			color: $primaryFontColor;
+			color: $text;
 			position: relative;
 		    margin: 0 53px 0 20px;
 		    top: 75px;
 
 			h1 {
-				color: $headerFontColor;
+				@include font('bold');
+				color: $secondary;
 				font-size: 11px;
 				text-transform: uppercase;
 				letter-spacing: 2px;
@@ -696,7 +795,7 @@ body {
 }
 // Below is styling for a javascript function that repeats through list
 // items and displays time-chart in multiple areas of the obeservation-deck
-.sightings {
+.panel {
 	&__box {
 		&__two {
 			&__d {
