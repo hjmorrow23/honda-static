@@ -1,0 +1,241 @@
+.app_header {
+	background: $primary;
+	color: $primaryFontColor;
+	width: 100%;
+	min-width: 1030px;
+// 	height: 80px;
+	height: 48px;
+	font-size: 1.0em;
+	top: 0;
+
+	&__logo {
+		position: relative;
+		top: 10px;
+		left: 20px;
+		display: inline-block;
+		width:155px;
+		height: 37px;
+    background-image: url('../images/honda-cars-logo-white.png');
+    background-repeat: no-repeat;
+    background-size: 35px;
+	}
+
+  &__logo--text {
+    background-image: url('../images/honda-cars-logo-text-white.png');
+    width: 130px;
+    height: 17px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 93px;
+    bottom: 3px;
+  }
+
+	a {
+		color: $primaryFontColor;
+		text-decoration: none;
+	}
+
+	&__nav {
+		height: 100%;
+
+		&__menu {
+			float: right;
+			display: inline-block;
+			position: relative;
+			padding: 12px 50px 0 0;
+
+			&__username,
+			&__profile,
+			&__apps {
+				color: $primaryFontColor;
+				font-size: 24px;
+				margin-right: 15px;
+			}
+
+			&__username {
+				font-size: 16px;
+				position: relative;
+				bottom: 7px;
+				margin-right: 0;
+				font-weight: 100;
+
+        span {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-size: 24px;
+          background-image: url('../images/user-icon.svg');
+          background-repeat: no-repeat;
+          margin-right: 10px;
+          position: relative;
+          top: 5px;
+        }
+			}
+
+		}
+
+	}
+}
+
+.app_subheader {
+  @include font('bold');
+	height: 42px;
+    background: $background-secondary;
+    width: calc(100% + 30px);
+    left: 0px;
+    z-index: 2;
+//  margin-bottom: 50px;
+    position: absolute;
+    top: -35px;
+    border-left: 1px solid rgba(0, 0, 0, 0.20);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.20);
+
+	&__title {
+		font-size: 12px;
+		@include font(black);
+		letter-spacing: 2.08px;
+		text-transform: uppercase;
+		color: $secondary;
+		padding: 14px 30px;
+	}
+}
+
+.header {
+    margin-top: 10px;
+
+	&__sightings {
+		margin-top: 20px;
+	}
+
+	&__main {
+		font-size: 16px;
+		text-transform: uppercase;
+    		color: $secondary;
+    		padding-bottom: 20px;
+    		border-bottom: 1px solid $borderBottom;
+    		text-transform: uppercase;
+    		letter-spacing: 2.2px;
+    		@include font('bold');
+
+    		&--light {
+    			@extend .header__main;
+    			color: $primary;
+    		}
+
+    		&__icon {
+    			margin-right: 12px;
+          position: relative;
+          top: 4px;
+
+    			&__locator {
+    				position: relative;
+    				top: 15px;
+    				padding-right: 5px;
+    			}
+    		}
+
+    		&__image {
+    			width: 19px;
+		    position: relative;
+		    top: 3px;
+		    margin-right: 5px;
+    		}
+
+
+	}
+}
+
+.mini-launcher {
+	display: none;
+	position: absolute;
+	width: 375px;
+	background-color: $primary;
+	z-index: 1000;
+	left: -280px;
+    top: 54px;
+    border-radius: 5px;
+    max-height: 600px;
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,1);
+	box-shadow: 0px 5px 15px 0px rgba(0,0,0,1);
+
+	&:before {
+		content: '';
+		position: absolute;
+		border-bottom: 15px solid $primaryNavBackground;
+		border-right: 15px solid transparent;
+		border-left: 15px solid transparent;
+		right: 18.2%;
+    		top: -14px;
+	}
+
+	&__header {
+		height: 65px;
+		padding: 24px 0;
+		text-align: center;
+		background-color: $primaryNavBackground;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+
+		&__title {
+			text-transform: uppercase;
+			font-weight: 400;
+			letter-spacing: 2.2px;
+		}
+	}
+
+	&__body {
+		padding: 35px 30px;
+		max-height: 535px;
+    		overflow: auto;
+
+		&__group {
+			display: block;
+			width: 100%;
+			min-height: 180px;
+
+			&__title {
+				padding-bottom: 12px;
+				margin-bottom: 20px;
+				border-bottom: 1px solid rgba(255, 255, 255, .5);
+				text-transform: uppercase;
+				letter-spacing: 2.2px;
+				font-size: 13px;
+				font-weight: 300;
+			}
+
+			&__link {
+				display: inline-block;
+				margin: 0 4px 20px 4px;
+				width: 70px;
+				float: left;
+
+				&:nth-child(6) {
+					clear: left;
+				}
+			}
+
+			&__icon {
+				width: 100%;
+			    height: 70px;
+			    display: inline-block;
+			    margin-bottom: 10px;
+			    transition: transform .25s ease-in-out;
+
+			    &:hover {
+			    		transform: scale(1.1);
+			    }
+			}
+
+			&__name {
+				width: 100%;
+				font-size: 11px;
+				word-wrap: break-word;
+				text-align: center;
+				line-height: 1.2;
+				font-weight: 300;
+			}
+		}
+	}
+}

@@ -1,5 +1,109 @@
 $primary: #007CC3;          //Blue for header background, buttons and some important text
 $secondary: #06456A;        //Dark Blue for headers
-$white: #fff;               
+$white: #fff;
 $text: #4A4A4A;             //Darker grey for general text and borders
 $text-secondary: #9B9B9B;   //Lighter grey for disabled and lighter state text
+$background-secondary: #F5F5F5;
+
+$handheld-min:  300px;
+$handheld-max:  680px;
+$tablet-min:    681px;
+$tablet-max:    1024px;
+$desktop-min:   1025px;
+$desktop-max:   1380px;
+
+$resize-factor: 16;
+
+$fa-font-path: '../libs/font-awesome/fonts';
+
+$oneCol		: 	60px;
+$twoCol		: 	140px;
+$threeCol	: 	220px;
+$fourCol	:	300px;
+$fiveCol	:	380px;
+$sixCol		:	460px;
+$sevenCol	:	540px;
+$eightCOl	:	620px;
+$nineCol	:   700px;
+$tenCol		:	780px;
+$full		:	1075px;
+
+
+$dcDarkBlue :   #060B17;
+
+$navBackgroundBlack: #292D39;  //Menu Background color class HM
+$navGrey     :  #9BA0B2;
+$subNavGrey  :  #3E455C;
+
+$ltGrey		:	#eaeaea;
+$dkGrey		: #999999;
+
+
+$mainBackgroundPurple: #1C1D30;
+$mdPurple   :	#2F2F4E;
+$headerFontColor : #9499AC;
+$error      : #D0021B;
+$connected  : #00B4AC;
+$primaryFontColor: #ffffff;
+$navHover   : #545c74;
+$borderBottom: #404066;
+
+$primary-hover:         #003A64; // Blue hover   - CTA hover
+$black:                 #000000; // Black        - Is an comment really necessary?
+$gray-1:                #333333; // Gray 1       - Global menu background
+$gray-2:                #333333; // Gray 2       - Text, icons
+$gray-3:                #a2a4a5; // Gray 3       - Ghost text
+$gray-4:                #e1e3e5; // Gray 4       - Stroke for Form Fields, Tables & Containers
+$gray-5:                #F7F8F9; // Gray 5       - Table row, expanded content
+$gray-6:                #EAEDEF; // Gray 6       - Page background
+
+
+// Secondary Colors
+// ------------------------------
+$secondary-1:           #7aa5d7;
+$secondary-2:           #292D39;
+$secondary-2-hover:     #168F48;
+$secondary-3:           #e48b2b;
+$secondary-4:           #f05948;
+
+
+$primaryNavBackground:  #2F2F4E;  //Nav and Panel Background colors
+$primaryHeader:         #060B17;  //Header background
+
+$secondaryText:         #ffffff;  //Header and nav text
+
+$gray: #4A4A4A;
+$light-gray: #9B9B9B;
+$green: #00A36D;
+$red: #EF3C24;
+$orange: #FFA52D;
+$blue: #4A90E2;
+$light-blue: #E9F0FA;
+$border-blue: #E4EDFA;
+$box-blue: #E3EBF4;
+$body: rgba(233,240,250, .24);
+$deep-green: #049393;
+$mdPurple: #3A3A5F;
+$headerFontColor: darken($white, 30);
+
+$bse-white: 						#ffffff;  //White for text
+$bse-grey-3:						#c3c3c3;  //Grey for blah blah
+$sidebar-2:              		#ececec;  //
+$sidebar-dropdown-bg:    		#46465d;
+$main-header-sidebar-highlight:  #060b17;
+$bse-pale-grey: 					#dde1e7;
+$warm-grey: 						#8f8f8f;
+$bse-grey-2: 					#444444;
+$sidebar: 						#25253d;
+$cn-primary: 					#341065;
+$cn-secondary: 					#694e8c;
+$cn-4: 							#e5ddf0;
+$cn-3: 							#bfb5ce;
+$cc-primary: 					#107dcf;
+$cc-secondary: 					#d1e9fb;
+$cc-tertiary: 					#e7f5ff;
+$wv-secondary: 					#dae9e9;
+$wv-primary: 					#049191;
+$def-primary: 					#005353;
+$sl-primary: 					#49868c;
+$wa-primary: 					#29599c;

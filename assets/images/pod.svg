@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="27px" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon/pod/check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-262.000000, -115.000000)" id="Icon/pod/check">
+            <g transform="translate(262.000000, 113.000000)">
+                <g id="Group" transform="translate(0.250795, 1.830000)">
+                    <path d="M12.5610572,14.8401495 C11.6764358,14.8401495 10.9597505,15.5568348 10.9597505,16.4414562 C10.9597505,17.3260777 11.6764358,18.042763 12.5610572,18.042763 C13.4456787,18.042763 14.162364,17.3260777 14.162364,16.4414562 C14.162364,15.5568348 13.4456787,14.8401495 12.5610572,14.8401495" id="Fill-4" fill="#4A4A4A"></path>
+                    <path d="M12.5610572,10.0354408 C11.6764358,10.0354408 10.9597505,10.7521261 10.9597505,11.6367475 C10.9597505,12.521369 11.6764358,13.2380543 12.5610572,13.2380543 C13.4456787,13.2380543 14.162364,12.521369 14.162364,11.6367475 C14.162364,10.7521261 13.4456787,10.0354408 12.5610572,10.0354408" id="Fill-4" fill="#4A4A4A"></path>
+                    <path d="M12.5610572,19.6838856 C11.6764358,19.6838856 10.9597505,20.4005709 10.9597505,21.2851923 C10.9597505,22.1698138 11.6764358,22.8864991 12.5610572,22.8864991 C13.4456787,22.8864991 14.162364,22.1698138 14.162364,21.2851923 C14.162364,20.4005709 13.4456787,19.6838856 12.5610572,19.6838856" id="Fill-5" fill="#4A4A4A"></path>
+                    <rect id="Rectangle-3" stroke="#4A4A4A" stroke-width="2" x="3.18098327" y="1.35332471" width="11.6348187" height="4.15439523" rx="1"></rect>
+                    <rect id="Rectangle-3" stroke="#4A4A4A" stroke-width="2" transform="translate(6.541786, 16.542555) rotate(-270.000000) translate(-6.541786, -16.542555) " x="0.724376572" y="14.4653571" width="11.6348187" height="4.15439523" rx="1"></rect>
+                    <rect id="Rectangle-3" stroke="#4A4A4A" stroke-width="2" x="1.23072785" y="5.65443184" width="15.421696" height="20.4636941" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

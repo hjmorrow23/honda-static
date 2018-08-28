@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="13px" viewBox="0 0 18 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Hamburger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Side-bar-observation" transform="translate(-170.000000, -27.000000)" fill="#06456A">
+            <g id="Hamburger" transform="translate(170.000000, 27.000000)">
+                <polygon id="Fill-1" points="0 2.46965625 17.2875937 2.46965625 17.2875937 0 0 0"></polygon>
+                <polygon id="Fill-2" points="0 7.40896875 17.2875937 7.40896875 17.2875937 4.93807767 0 4.93807767"></polygon>
+                <polygon id="Fill-3" points="0 12.3482812 17.2875937 12.3482812 17.2875937 9.878625 0 9.878625"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

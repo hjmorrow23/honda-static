@@ -1,0 +1,25 @@
+.content_header{
+	background: #F5F5F5;
+	height: 45px;
+	transition: left .35s, width .35s;
+	position: fixed;
+	width:100%;
+
+	&__header{
+		margin-left:20px;
+		a{
+			font-size: 16px !important;
+			color: $primaryFontColor;
+			text-decoration: none;
+			line-height: 45px;
+		}
+		h1{
+			margin-left:40px;
+			color: $primaryFontColor;
+			font-size: 15px;
+			letter-spacing: .03rem;
+			line-height: 45px;
+			display: inline-block;
+		}
+	}
+}
