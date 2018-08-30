@@ -33,10 +33,10 @@ var toggleSidebar = function() {
 $(document).ready(function() {
   $('.side_nav__list__item').each(function(){
     if($(this).find('.side_nav__list__item__submenu').length !== 0) {
-      $(this).click(function(e){
+      $(this).find('.side_nav__list__item__link').click(function(e){
         e.preventDefault();
         if($('.side_nav').width() === 216) {
-          $(this).find('.side_nav__list__item__submenu').slideToggle();
+          $(this).parents('.side_nav__list__item').find('.side_nav__list__item__submenu').slideToggle();
         }
       });
     }

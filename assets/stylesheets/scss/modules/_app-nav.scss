@@ -28,6 +28,8 @@
 			line-height: 44px;
 			// border-bottom: 1px solid $text-secondary;
 			transition: background-color .25s;
+      position: relative;
+      z-index: 10;
 
       &:last-child {
         // border-bottom: none;
@@ -59,6 +61,8 @@
 				padding: 10px 0 10px 20px;
 				color: $secondary;
 				transition: transform .35s, padding .35s;
+        position: relative;
+        z-index: 1000;
 
 				&--collapsed {
 					padding: 10px 0 10px 18px;
